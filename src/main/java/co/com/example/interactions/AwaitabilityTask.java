@@ -1,11 +1,11 @@
-package org.example.interactions;
+package co.com.example.interactions;
 
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.matchers.WebElementStateMatchers;
 import net.serenitybdd.screenplay.waits.WaitUntil;
 
-import static org.example.userInterfaces.googlePage.FIRST_RESULT;
+import static co.com.example.userInterfaces.googlePage.FIRST_RESULT;
 
 public class AwaitabilityTask implements Task {
     @Override

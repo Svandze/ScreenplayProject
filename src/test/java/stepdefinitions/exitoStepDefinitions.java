@@ -3,16 +3,24 @@ package stepdefinitions;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import net.serenitybdd.screenplay.actions.*;
+import net.serenitybdd.screenplay.actions.Open;
+import net.serenitybdd.screenplay.actions.Click;
+import net.serenitybdd.screenplay.actions.Scroll;
 import net.serenitybdd.screenplay.actors.OnStage;
-import org.example.questions.ComparePrices;
-import org.example.tasks.SaveProductNameAndPrice;
-import org.example.tasks.addRandomAmountOfProducts;
-import org.example.tasks.getFinalPrice;
+import co.com.example.questions.ComparePrices;
+import co.com.example.tasks.SaveProductNameAndPrice;
+import co.com.example.tasks.addRandomAmountOfProducts;
+import co.com.example.tasks.getFinalPrice;
 import org.hamcrest.Matchers;
 
-import static net.serenitybdd.screenplay.GivenWhenThen.*;
-import static org.example.userInterfaces.exitoMainPage.*;
+import static co.com.example.userInterfaces.exitoMainPage.DROPDOWN;
+import static co.com.example.userInterfaces.exitoMainPage.CATEGORIES;
+import static co.com.example.userInterfaces.exitoMainPage.SUBCATEGORIES;
+import static co.com.example.userInterfaces.exitoMainPage.PRODUCTS;
+import static co.com.example.userInterfaces.exitoMainPage.ADD_BTN;
+import static co.com.example.userInterfaces.exitoMainPage.TITLE_TO_SCROLL;
+import static co.com.example.userInterfaces.exitoMainPage.CART_BUTTON;
+import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 
 public class exitoStepDefinitions {
 

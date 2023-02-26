@@ -1,11 +1,9 @@
-package org.example.tasks;
+package co.com.example.tasks;
 
+import co.com.example.userInterfaces.exitoMainPage;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
-
-import static org.example.userInterfaces.exitoMainPage.PRICE_TEXT;
-import static org.example.userInterfaces.exitoMainPage.TITLE_OF_PRODUCT;
 
 public class SaveProductNameAndPrice implements Task {
     String title;
@@ -13,8 +11,8 @@ public class SaveProductNameAndPrice implements Task {
 
     @Override
     public <T extends Actor> void performAs(T actor) {
-        title = TITLE_OF_PRODUCT.resolveFor(actor).getText();
-        currentPrice = Integer.valueOf(PRICE_TEXT.resolveFor(actor).getText().replace("$", "")
+        title = exitoMainPage.TITLE_OF_PRODUCT.resolveFor(actor).getText();
+        currentPrice = Integer.valueOf(exitoMainPage.PRICE_TEXT.resolveFor(actor).getText().replace("$", "")
                 .replace(".", "")
                 .replace(" ", ""));
         actor.remember("productTitle", title);

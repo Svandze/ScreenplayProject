@@ -1,27 +1,23 @@
 package stepdefinitions;
 
 import io.cucumber.java.After;
-import io.cucumber.java.AfterAll;
 import io.cucumber.java.Before;
-import io.cucumber.java.BeforeAll;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.github.bonigarcia.wdm.WebDriverManager;
-import jdk.jfr.internal.tool.Main;
-import jxl.common.Logger;
-import net.serenitybdd.screenplay.actions.*;
+import net.serenitybdd.screenplay.actions.Open;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
 import net.thucydides.core.annotations.Managed;
-import org.example.exceptions.ItemNotFoundException;
-import org.example.questions.ValidateFirstResult;
-import org.example.tasks.inputInformation;
+import co.com.example.exceptions.ItemNotFoundException;
+import co.com.example.questions.ValidateFirstResult;
+import co.com.example.tasks.inputInformation;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import static net.serenitybdd.screenplay.GivenWhenThen.*;
-import static org.hamcrest.Matchers.*;
+import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
+import static org.hamcrest.Matchers.is;
 
 public class mainStepDefinitions {
     @Managed

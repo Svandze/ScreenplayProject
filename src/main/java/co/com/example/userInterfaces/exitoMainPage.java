@@ -1,4 +1,4 @@
-package org.example.userInterfaces;
+package co.com.example.userInterfaces;
 
 
 import net.serenitybdd.screenplay.targets.Target;

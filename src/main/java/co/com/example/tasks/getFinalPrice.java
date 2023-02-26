@@ -1,10 +1,10 @@
-package org.example.tasks;
+package co.com.example.tasks;
 
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
 
-import static org.example.userInterfaces.cartPage.FINAL_PRICE;
+import static co.com.example.userInterfaces.cartPage.FINAL_PRICE;
 
 public class getFinalPrice implements Task {
     Integer price;

@@ -1,4 +1,4 @@
-package org.example.exceptions;
+package co.com.example.exceptions;
 
 
 public class ItemNotFoundException extends AssertionError {

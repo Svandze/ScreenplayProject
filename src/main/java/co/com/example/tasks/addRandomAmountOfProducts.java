@@ -1,13 +1,11 @@
-package org.example.tasks;
+package co.com.example.tasks;
 
+import co.com.example.userInterfaces.exitoMainPage;
+import co.com.example.utils.returnRandomAmount;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Click;
-import org.example.utils.returnRandomAmount;
-
-import static org.example.userInterfaces.exitoMainPage.PLUS_SYMBOL_BTN;
-import static org.example.userInterfaces.exitoMainPage.QUANTITY_TEXT;
 
 public class addRandomAmountOfProducts implements Task {
     int max;
@@ -23,10 +21,10 @@ public class addRandomAmountOfProducts implements Task {
         int totalItems = returnRandomAmount.getRandomIntInARange(1, 9);
         for (int i = 0; i < totalItems; i++) {
             actor.attemptsTo(
-                    Click.on(PLUS_SYMBOL_BTN)
+                    Click.on(exitoMainPage.PLUS_SYMBOL_BTN)
             );
         }
-        quantity = String.valueOf(QUANTITY_TEXT.resolveFor(actor).getText().charAt(0));
+        quantity = String.valueOf(exitoMainPage.QUANTITY_TEXT.resolveFor(actor).getText().charAt(0));
         actor.remember("quantity", Integer.valueOf(quantity));
     }
 

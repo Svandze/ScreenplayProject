@@ -1,9 +1,9 @@
-package org.example.questions;
+package co.com.example.questions;
 
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 
-import static org.example.userInterfaces.googlePage.FIRST_RESULT;
+import static co.com.example.userInterfaces.googlePage.FIRST_RESULT;
 
 public class ValidateFirstResult implements Question {
     String validation;
