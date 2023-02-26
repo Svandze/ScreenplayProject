@@ -1,13 +1,22 @@
+buildscript {
+    dependencies {
+        classpath('net.serenity-bdd:serenity-gradle-plugin:2.0.81')
+    }
+}
+
 plugins {
     id 'java'
+    id 'test-report-aggregation'
 }
 
 group 'org.example'
 version '1.0-SNAPSHOT'
+apply plugin: 'net.serenity-bdd.aggregator'
 
 repositories {
     mavenCentral()
 }
+
 compileJava.options.encoding = 'UTF-8'
 
 tasks.withType(JavaCompile) {
